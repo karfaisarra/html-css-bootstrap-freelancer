@@ -1,0 +1,43 @@
+#site_header{
+    background-color: #2C3E50;
+}
+header .menu{
+    list-style: none;
+}
+header .menu li{
+    display: inline-block;
+    padding-left: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.icon i{
+    padding: 0.3rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+/* debug */
+.debug .start{
+    height: 400px;
+}
+.debug .start .container{
+    height: 200px;
+    background-color: aquamarine;
+}
+.debug .profile{
+    height: 400px;
+}
+.debug [class^="col-"]{
+    background-color: blueviolet;
+    height: 100px;
+    border: 1px solid black;
+}
+/* Responsive*/
+
+@media screen and (min-width: 576px) {
+    .icon{
+        display: none;
+    } 
+}
