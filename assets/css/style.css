@@ -15,17 +15,29 @@
 .bg_secondary_dark{
     background-color: var(--bf-secondary-dark);
 }
-.stella{
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.stella p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
 }
-.stella .line{
-    width: 110px;
-    height: 3px;
-    border-radius: 20px;
+.stella p::before{
+    content: "";
+    width:8%;
+    height:3px;
+    display:inline-block;
+    border-radius:10px;
+    background-color:black;
 }
+.stella p::after{
+   content: "";
+    width:8%;
+    height:3px; 
+    display:inline-block;
+    border-radius:10px;
+    background-color:black;
+}
+
 img{
     max-width: 100%;
     border-radius: 10px;
@@ -39,34 +51,27 @@ img{
 
 /* main */
 /* jumbotron */
-.jumbotron .stella .line{
-    background-color: var(--bf-light);
+.jumbotron .stella p::before { 
+    background-color:white;
 }
-
-.jumbotron .text{
-    padding-bottom: 3rem;
+.jumbotron .stella p::after {
+    background-color:white;
 }
 /* end_jumbotron */
 
-/* proflie */
-
-.title_profile .stella .line{
-    background-color: var(--bf-dark);
-}
-
-/* end_proflie */
-
 /* about */
-.title_about .stella .line{
-    background-color: var(--bf-light);
+
+.about .stella p::before { 
+    background-color:white;
+}
+.about .stella p::after {
+    background-color:white;
 }
 
 /* end_about */
 
-/* contact */
-/* end_contact */
-
 /* call_to_action */
+
 .call_to_action p{
     font-weight: 500;
 }
@@ -83,7 +88,7 @@ img{
     align-items: center;
 }
 .text_success{
-    color: rgb(18, 211, 18);
+    color: var(--bf-primary);
 }
 /* end_call_to_action */
 /* end_main */
