@@ -1,12 +1,21 @@
 :root{
     --bf-primary: #1ABC9C;
-    --bf-dark: #140F0F;
+    --bf-dark: black;
     --bf-secondary: #3A546D;
     --bf-secondary-dark: #2C3E50;
     --bf-light: white;
 }
-
-
+.stella{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.stella .line{
+    width: 110px;
+    height: 3px;
+    border-radius: 20px;
+}
 /* #region_header */
 #site_header{
     background-color: var(--bf-secondary-dark);
@@ -15,14 +24,30 @@
 
 /* main */
 /* jumbotron */
-.jumbotron .stella{
-    list-style: none;
-}
-.jumbotron .stella li{
-    display: inline-block;
+.jumbotron{
+    background-color: var(--bf-primary);
 }
 
+.jumbotron .stella .line{
+    background-color: var(--bf-light);
+}
+
+.jumbotron .text{
+    padding-bottom: 3rem;
+    font-weight: ;
+}
 /* end_jumbotron */
+
+/* proflie */
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.title_profile .stella .line{
+    background-color: var(--bf-dark);
+}
+
+/* end_proflie */
 
 
 
@@ -35,6 +60,7 @@
 }
 #site_footer{
     background-color: #2C3E50;
+    margin-bottom: -1rem;
 }
 /* end_main */
 
@@ -50,9 +76,6 @@
     height: 400px;
 }
 .debug [class^="col-"]{
-    background-color: blueviolet;
-    height: 100px;
-    border: 1px solid black;
 }
 .debug .contact .container_small{
     width: 90%;
@@ -63,7 +86,5 @@
 .debug .call_to_action{
     height: 400px;
 }
-.debug footer {
-    height: 120px;
-}
+
 /* Responsive*/
