@@ -16,6 +16,18 @@
     height: 3px;
     border-radius: 20px;
 }
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+.pl_9{
+    padding-left: 9em;
+    font-weight: 600;
+}
+.pr_9{
+    padding-right: 9rem;
+    font-weight: 600;
+}
 /* #region_header */
 #site_header{
     background-color: var(--bf-secondary-dark);
@@ -34,21 +46,26 @@
 
 .jumbotron .text{
     padding-bottom: 3rem;
-    font-weight: ;
 }
 /* end_jumbotron */
 
 /* proflie */
-img{
-    max-width: 100%;
-    border-radius: 10px;
-}
+
 .title_profile .stella .line{
     background-color: var(--bf-dark);
 }
 
 /* end_proflie */
 
+/* about */
+.about{
+    background-color: var(--bf-primary);
+}
+.title_about .stella .line{
+    background-color: var(--bf-light);
+}
+
+/* end_about */
 
 
 
@@ -68,13 +85,6 @@ img{
 
 /* debug */
 
-
-.debug .profile{
-    height: 800px;
-}
-.debug .about{
-    height: 400px;
-}
 .debug [class^="col-"]{
 }
 .debug .contact .container_small{
