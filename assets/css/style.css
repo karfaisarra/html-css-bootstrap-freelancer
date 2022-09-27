@@ -13,20 +13,36 @@
 }
 /* #endregion_header */
 
+/* main */
+/* jumbotron */
+.jumbotron .stella{
+    list-style: none;
+}
+.jumbotron .stella li{
+    display: inline-block;
+}
+
+/* end_jumbotron */
+
+
+
+
+
+
+
 .call_to_action{
     background-color: #3A546D;
 }
 #site_footer{
     background-color: #2C3E50;
 }
+/* end_main */
+
+
+
 /* debug */
-.debug .start{
-    height: 400px;
-}
-.debug .start .container{
-    height: 200px;
-    background-color: aquamarine;
-}
+
+
 .debug .profile{
     height: 800px;
 }
